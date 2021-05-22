@@ -4,7 +4,6 @@ import classes from './CartItem.module.css';
 
 const CartItem = (props) => {
   const { id, name, count, totalPrice, price } = props.item;
-  console.log(id, name, count, totalPrice, price)
   const dispatch = useDispatch()
   const addHandler = () => {
     dispatch(cartActions.addItemToCart(props.item))

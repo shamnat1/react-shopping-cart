@@ -1,9 +1,7 @@
-import React,{components} from 'react';
-import styled from 'styled-components';
+import React from 'react';
 import classes from './SideBar.module.css';
-import {NavLink} from 'react-router-dom';
 
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import homeIcon from '@iconify-icons/feather/home';
 import checkSquare from '@iconify-icons/feather/check-square';
 import mailIcon from '@iconify-icons/feather/mail';

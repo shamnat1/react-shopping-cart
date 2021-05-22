@@ -7,10 +7,8 @@ import calendarIcon from '@iconify-icons/feather/calendar';
 import starIcon from '@iconify-icons/feather/star';
 import checkSquare from '@iconify-icons/feather/check-square';
 import mailIcon from '@iconify-icons/feather/mail';
-import shoppingCart from '@iconify-icons/feather/shopping-cart';
 import searchIcon from '@iconify-icons/feather/search';
 import bellIcon from '@iconify-icons/feather/bell';
-import creditCard from '@iconify-icons/feather/credit-card';
 import alignJustify from '@iconify-icons/feather/align-justify';
 
 

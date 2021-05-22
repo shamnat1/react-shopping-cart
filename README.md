@@ -1,6 +1,6 @@
 #React shopping app
 
-React application with shopping cart option on a responsive page  
+React application with shopping cart page with responsive design 
 
 ## Available Scripts
 
