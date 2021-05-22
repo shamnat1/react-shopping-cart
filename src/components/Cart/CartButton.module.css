@@ -1,0 +1,16 @@
+
+.badge {
+
+  font-size: 12px;
+  background: #7367f0;
+  color: #fff;
+  padding: 1px;
+  vertical-align: top;
+  margin-left: -10px; 
+  border-radius: 50%;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+background-color: #c67605;
+}

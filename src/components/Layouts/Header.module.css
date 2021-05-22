@@ -1,0 +1,60 @@
+.header {
+    grid-area: head;
+    background: #283046;
+    margin-top: 1rem; 
+  }
+.header nav {
+  align-items: center;
+  display: flex;
+  color: white;
+  margin-left: .5rem;
+  margin-top: .5rem;
+} 
+.icon{
+  padding: .1rem .4rem .5rem .4rem ;
+}
+.icon_right{
+  padding: .1rem .4rem .5rem .4rem ;
+}
+.icon_search{
+  display: none;
+  padding: .8rem .4rem .5rem .4rem ;
+}
+
+.navbar_second{
+  margin-left: auto;
+}
+
+.user_tag{
+  text-align: right;
+  vertical-align: middle;
+  line-height: .01rem;  
+  margin : 0rem 1rem;
+}
+.user_tag p:last-child{
+  font-size: 10px;;
+}
+.user_tag p:first-child {
+  font-size: 13px;
+}
+
+
+@media screen and (min-width: 481px) and (max-width:768px)  {
+    .icon{
+      display:none;
+    }
+    .icon_search{
+      display: block;
+    }
+}
+@media screen and (max-width: 481px)  {
+  .icon{
+    display:none;
+  } 
+  .icon_search{
+    display: block;
+  }
+  .user_tag{
+    display: none;
+  }
+}

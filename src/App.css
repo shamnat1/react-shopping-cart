@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600,700');
+
+
+.grid-container {
+  display: grid;
+
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 60px 1fr;
+
+  grid-template-areas:
+
+  "sidebar head head head"
+  "sidebar main main main"
+  "sidebar main main main"
+  "sidebar main main main";
+
+  /* grid-container height = 100% of viewport height */
+  height: 100vh;
+  background: #161d31;
+
+  grid-gap : 1em;
+  padding-right : 1rem ;
+}
+
+.grid-sidebar {
+  grid-area: sidebar;
+}
+.header {
+  grid-area: head;
+  background: #283046;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 72px 1fr;
+    grid-template-areas:
+    "head"
+    "main";
+  }
+  .grid-sidebar {
+    display:none
+  }
+}
