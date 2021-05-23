@@ -1,19 +1,18 @@
 .row{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: .5rem;
 }
 .item{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    gap:1rem;
 }
 .s_image{
     background: lightblue;
     background-color: #bbb;
     border-radius: 50%;
     padding : 1rem;
-    margin:.5rem;
+    margin:.5rem 1rem;
 }
 .s_text{
     line-height:.1rem;
@@ -45,12 +44,17 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap:.1rem 4rem;
     }
+    .s_image{
+        margin: .5rem;
+    }
 }
 @media screen and (max-width: 481px)  {
     .row{
         width:20%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:.1rem 4rem;
+        grid-gap:.1rem 2rem;
     }
-    
+    .s_image{
+        margin: .5rem;
+    }
 }

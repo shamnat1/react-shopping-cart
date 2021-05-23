@@ -14,6 +14,8 @@ const Cart = (props) => {
   }
   const checkoutHandler = () => {
     dispatch(cartActions.checkoutItems());
+    dispatch(uiActions.toggle());
+    alert("Transaction finished successfully")
   }
   return (
     <Modal onClose={onCloseHandler}>

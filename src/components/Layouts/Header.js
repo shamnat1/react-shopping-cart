@@ -22,7 +22,7 @@ const Header = (props) => {
           <Icon className={classes.icon} icon={messageIcon} />
           <Icon className={classes.icon} icon={mailIcon} />
           <Icon className={classes.icon} icon={checkSquare} />
-          <Icon className={classes.icon} icon={starIcon} />
+          <Icon className={classes.icon} color="#ff9f43" icon={starIcon} />
         </div>
 
         <div className={classes.navbar_second}>

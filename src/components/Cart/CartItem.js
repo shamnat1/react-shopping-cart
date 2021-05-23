@@ -22,8 +22,7 @@ const CartItem = (props) => {
           <button onClick={addHandler}>+</button>
         </div>
         <div className={classes.price}>
-          ${totalPrice.toFixed(2)}{' '}
-          <span className={classes.itemprice}>(${price.toFixed(2)}/item)</span>
+          ${totalPrice.toFixed(2)}
         </div>
       </header>
      

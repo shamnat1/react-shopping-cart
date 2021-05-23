@@ -13,7 +13,7 @@ const CartButton = (props) => {
   return (
     <>
       <Icon className={props.iconClass} icon={shoppingCart} onClick={toggleHandler}></Icon>
-      <span className={`${classes.badge} ${classes["badge-warning"]}`} id='lblCartCount'> {totalItems} </span>
+     {totalItems >0 && <span className={`${classes.badge} ${classes["badge-warning"]}`} id='lblCartCount'> {totalItems} </span>}
     </>
   );
 };

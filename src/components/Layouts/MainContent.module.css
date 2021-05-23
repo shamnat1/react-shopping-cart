@@ -1,20 +1,7 @@
-.content1 {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 30% 40% auto;
-    grid-gap: 1rem;
-    padding-bottom: 1rem;
-    
-  }
-  
-  .content > div {
+
+.content > div {
       background: #283046;
   } 
-
-  
-  
-
   .content {
     grid-area: main;
     display: grid;
@@ -98,7 +85,6 @@
             "six six"
             "seven seven "
             "eight eight ";
-
             overflow-x: scroll;
             
         }

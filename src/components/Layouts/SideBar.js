@@ -11,15 +11,11 @@ import shoppingCart from '@iconify-icons/feather/shopping-cart';
 import typeIcon from '@iconify-icons/feather/type';
 import eyeIcon from '@iconify-icons/feather/eye';
 import creditCard from '@iconify-icons/feather/credit-card';
-
-
-
-
 const SideBar = () => {
     return <div className={classes.container}>
 
         <ul className={`${classes.menu} ${classes.menu_home}`}>
-            <li className={classes.item}>
+            <li className={`${classes.item} ${classes.item_home}`}>
                 <Icon className={classes.icon} icon={homeIcon} />
                 <label>Home</label>
                 <span className={classes['child-number-tag']}>2</span>

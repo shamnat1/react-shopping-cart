@@ -1,13 +1,15 @@
 .item {
-  margin: .2rem 0;
   background-color: #283046;
-  padding: .1rem;
+  padding: .2rem;
   border-bottom: 1px solid  rgb(255,255,255,.12);
 }
 
+.item:hover{
+  background-color: #161d31;
+}
 .item h3 {
   margin: 0 0 0.5rem 0;
-  font-size: 1rem;
+  font-size: 15px;
 }
 
 .item header {
@@ -23,12 +25,10 @@
 }
 
 .quantity span {
-  font-size: 1rem;
   font-weight: bold;
 }
 
 .price {
-  font-size: 1rem;
   font-weight: bold;
 }
 .actions {

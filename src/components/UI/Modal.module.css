@@ -9,25 +9,19 @@
 
 .modal{
   position: fixed;
-  top: 2vh;
-  left: 5%;
-  width: 90%;
-  padding: 1rem 1rem 1rem 15rem ;
+  top: 10vh;
+  width: 30rem;
+  left: calc(75% - 20rem);
   border-radius: 14px;
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
+  box-shadow: 2px 2px 2px 2px rgb(47 54 72);
 }
-@media (min-width: 768px) {
-    .modal {
-      width: 40rem;
-      left: calc(50% - 20rem);
-    }
-  }
+
 
 @media (max-width: 768px) {
     .modal {
-      top: 25vh;
-      padding: 1rem;
+      left: calc(60% - 20rem);
     }
   }  
 

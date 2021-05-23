@@ -1,28 +1,24 @@
 import {createSlice} from '@reduxjs/toolkit';
 
 const initialState = {
-    items : [
-            {
-                "id":1,"name": "item 1", "count": 1, "price": 339.99,"totalPrice": 339.99
-            }, 
-            {
-                "id":2,"name": "item 2", "count": 1, "price": 129.29,"totalPrice": 129.29
-            },
-            {
-                "id":3,"name": "item 3", "count": 1, "price": 669.99,"totalPrice": 669.99
-            },
-            {
-                "id":4,"name": "item 4", "count": 1, "price": 999.99,"totalPrice": 999.99
-            }
-        ],
-    totalItems : 4,
-    totalCartPrice : 2139.26
+    items : [],
+    totalItems : 0,
+    totalCartPrice : 0
 };
 const cartSlice = createSlice ({
     name:"cart",
     initialState,
     reducers : {
+        replaceCart(state,action){
+            state.items = action.payload.map((item,index )=> {
+                return {...item,id:index,totalPrice:item.price}
+            })
+            
+            state.totalItems = action.payload.reduce((acc,item)=>acc+item.count,0)
+            state.totalCartPrice = action.payload.reduce((acc,item)=>acc+item.price,0)
+        },
         addItemToCart(state,action){
+            
             const newItem = action.payload;
             const existingItem = state.items.find(item => item.id === newItem.id);
             if(!existingItem){
@@ -38,12 +34,13 @@ const cartSlice = createSlice ({
         removeItemFromCart(state,action) {
             const id = action.payload;
             const existingItem = state.items.find(item => item.id === id);
+            console.log(existingItem.price,id,existingItem.totalPrice)
             if(existingItem){
                 if(existingItem.count === 1){
                     state.items = state.items.filter(item=>item.id !== existingItem.id) 
                 }else{
                     existingItem.count--;
-                    state.totalPrice -=existingItem.price;
+                    existingItem.totalPrice -=existingItem.price;
                 }
 
                 state.totalItems--;
