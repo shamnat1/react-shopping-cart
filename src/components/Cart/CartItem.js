@@ -3,7 +3,7 @@ import {cartActions} from '../../redux/cart-slice'
 import classes from './CartItem.module.css';
 
 const CartItem = (props) => {
-  const { id, name, count, totalPrice, price } = props.item;
+  const { id, name, count, totalPrice } = props.item;
   const dispatch = useDispatch()
   const addHandler = () => {
     dispatch(cartActions.addItemToCart(props.item))

@@ -2,7 +2,6 @@ import {cartActions} from './cart-slice';
 
 export const fetchCartData = () => {
     return async(dispatch) => {
-        console.log("fetchCartData")
         const fetchData = async() => {
                 const response = await fetch('./assets/shopping_cart_items.json');
                 if(!response.ok){
